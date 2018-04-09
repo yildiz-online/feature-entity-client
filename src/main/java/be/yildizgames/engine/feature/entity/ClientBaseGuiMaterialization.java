@@ -14,9 +14,8 @@
 
 package be.yildizgames.engine.feature.entity;
 
-import be.yildiz.common.translation.Key;
-import be.yildiz.module.graphic.Material;
-import be.yildiz.module.graphic.gui.ButtonMaterial;
+import be.yildizgames.common.client.translation.TranslationKey;
+import be.yildizgames.module.graphic.gui.button.ButtonMaterial;
 
 /**
  * Common elements for the item GUI materialization.
@@ -41,11 +40,11 @@ public class ClientBaseGuiMaterialization <T> {
     /**
      * Translation key for the GUI element name.
      */
-    private final Key nameKey;
+    private final TranslationKey nameKey;
     /**
      * Translation key for the GUI element description.
      */
-    private final Key descriptionKey;
+    private final TranslationKey descriptionKey;
     /**
      * Material to use to display the 2D GUI representation.
      */
@@ -63,7 +62,7 @@ public class ClientBaseGuiMaterialization <T> {
     //@Requires descriptionKey != null
     //@Requires icon != null
     //@Requires constructionMaterial != null
-    protected ClientBaseGuiMaterialization(final Key nameKey, final Key descriptionKey, final T icon, final ButtonMaterial constructionButton) {
+    protected ClientBaseGuiMaterialization(final TranslationKey nameKey, final TranslationKey descriptionKey, final T icon, final ButtonMaterial constructionButton) {
         super();
         this.nameKey = nameKey;
         this.descriptionKey = descriptionKey;
@@ -76,11 +75,11 @@ public class ClientBaseGuiMaterialization <T> {
         return constructionButton;
     }
 
-    public Key getNameKey() {
+    public TranslationKey getNameKey() {
         return nameKey;
     }
 
-    public Key getDescriptionKey() {
+    public TranslationKey getDescriptionKey() {
         return descriptionKey;
     }
 

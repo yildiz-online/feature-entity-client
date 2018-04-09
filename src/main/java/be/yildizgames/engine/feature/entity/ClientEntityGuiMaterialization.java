@@ -14,9 +14,8 @@
 
 package be.yildizgames.engine.feature.entity;
 
-import be.yildiz.client.data.ClientBaseGuiMaterialization;
-import be.yildiz.common.translation.Key;
-import be.yildiz.module.graphic.gui.ButtonMaterial;
+import be.yildizgames.common.client.translation.TranslationKey;
+import be.yildizgames.module.graphic.gui.button.ButtonMaterial;
 
 /**
  * @author Grégory Van den Borre
@@ -29,7 +28,7 @@ public class ClientEntityGuiMaterialization<T> extends ClientBaseGuiMaterializat
 
     private final T hostileMapIcon;
 
-    protected ClientEntityGuiMaterialization(Key nameKey, Key descriptionKey, T icon, T animatedIcon, ButtonMaterial constructionButton, T mapIcon, T hostileMapIcon) {
+    protected ClientEntityGuiMaterialization(TranslationKey nameKey, TranslationKey descriptionKey, T icon, T animatedIcon, ButtonMaterial constructionButton, T mapIcon, T hostileMapIcon) {
         super(nameKey, descriptionKey, icon, constructionButton);
         this.animatedIcon = animatedIcon;
         this.mapIcon = mapIcon;

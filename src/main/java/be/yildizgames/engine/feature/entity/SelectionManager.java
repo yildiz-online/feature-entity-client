@@ -14,11 +14,11 @@
 
 package be.yildizgames.engine.feature.entity;
 
-import be.yildizgames.common.collection.Lists;
-import be.yildizgames.common.collection.Sets;
 import be.yildizgames.common.util.Checker;
 
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -34,7 +34,7 @@ public class SelectionManager implements DestructionListener<ClientEntity> {
     /**
      * List of all selected units.
      */
-    private final Set<ClientEntity> selectionList = Sets.newInsertionOrderedSet();
+    private final Set<ClientEntity> selectionList = new LinkedHashSet<>();
 
     /**
      * Flag to check if the previous selection should be cleared when a new one is made.
@@ -43,7 +43,7 @@ public class SelectionManager implements DestructionListener<ClientEntity> {
     /**
      * List of all view to update when selection status change.
      */
-    private final List<SelectionListener> listeners = Lists.newList();
+    private final List<SelectionListener> listeners = new ArrayList<>();
 
     /**
      * Maximum number of selectable entities.
@@ -167,7 +167,7 @@ public class SelectionManager implements DestructionListener<ClientEntity> {
      * @return all selected entities.
      */
     public final List<ClientEntity> getSelectionList() {
-        return Lists.newList(this.selectionList);
+        return new ArrayList(this.selectionList);
     }
 
     /**

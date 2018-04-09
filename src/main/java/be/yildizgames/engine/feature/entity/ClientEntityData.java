@@ -15,11 +15,11 @@
 package be.yildizgames.engine.feature.entity;
 
 import be.yildiz.client.data.ClientConstructionData;
-import be.yildiz.common.translation.Key;
-import be.yildiz.module.graphic.gui.ButtonMaterial;
+import be.yildizgames.common.client.translation.TranslationKey;
 import be.yildizgames.engine.feature.entity.data.EntityType;
 import be.yildizgames.engine.feature.entity.module.ModuleGroup;
 import be.yildizgames.engine.feature.resource.ResourceValue;
+import be.yildizgames.module.graphic.gui.button.ButtonMaterial;
 
 import java.time.Duration;
 
@@ -41,7 +41,7 @@ public class ClientEntityData<T> implements ClientConstructionData, EntityData {
     }
 
     @Override
-    public Key getNameKey() {
+    public TranslationKey getNameKey() {
         return this.guiMaterialization.getNameKey();
     }
 
@@ -78,7 +78,7 @@ public class ClientEntityData<T> implements ClientConstructionData, EntityData {
     }
 
     @Override
-    public Key getDescriptionKey() {
+    public TranslationKey getDescriptionKey() {
         return this.guiMaterialization.getDescriptionKey();
     }
 

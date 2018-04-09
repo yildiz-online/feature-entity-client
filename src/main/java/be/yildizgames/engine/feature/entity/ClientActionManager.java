@@ -14,9 +14,6 @@
 
 package be.yildizgames.engine.feature.entity;
 
-import be.yildiz.client.entity.ClientEntity;
-import be.yildiz.client.entity.ClientEntityManager;
-
 /**
  * @author Grégory Van den Borre
  */

@@ -14,7 +14,7 @@
 
 package be.yildizgames.engine.feature.entity;
 
-import be.yildiz.common.translation.Key;
+import be.yildizgames.common.client.translation.TranslationKey;
 import be.yildizgames.common.gameobject.Movable;
 import be.yildizgames.common.geometry.Point3D;
 import be.yildizgames.common.model.ActionId;
@@ -58,7 +58,7 @@ public class ClientEntity<T> implements Entity {
      * @return The translation key of this entity name.
      */
     //@Ensures return value != null
-    public Key getNameKey() {
+    public TranslationKey getNameKey() {
         return this.data.getNameKey();
     }
 
