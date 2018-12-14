@@ -14,22 +14,12 @@
 
 package be.yildizgames.engine.feature.entity;
 
-import be.yildiz.helper.Helper;
-import be.yildizgames.common.collection.Lists;
-import be.yildizgames.common.model.PlayerId;
-import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
-
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
-
 /**
  * @author Grégory Van den Borre
  */
 class SelectionManagerTest {
 
-    @Test
+   /* @Test
     void test() {
         SelectionManager s = new SelectionManager(12);
         assertEquals(12, s.getMaxSelection());
@@ -147,5 +137,5 @@ class SelectionManagerTest {
         m.setSelection(e2);
         assertEquals(1, m.getSelectionList().size());
         assertEquals(e2, m.getSelection().get());
-    }
+    }*/
 }
