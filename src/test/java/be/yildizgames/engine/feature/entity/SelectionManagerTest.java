@@ -138,4 +138,5 @@ class SelectionManagerTest {
         assertEquals(1, m.getSelectionList().size());
         assertEquals(e2, m.getSelection().get());
     }*/
+
 }
